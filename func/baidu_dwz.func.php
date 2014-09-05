@@ -25,7 +25,7 @@ function bd_dwz($type,$url){
         //$curl_close($short);
         $short_array = json_decode($short_json,true);
         $bk = $short_array['status'];
-        //No error   
+        //No error
         //if (!curl_errno($short_json)){
         if (!$bk){
 
