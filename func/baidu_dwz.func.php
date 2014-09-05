@@ -2,13 +2,14 @@
 /**
  * Baidu dwz.cn URL Shorter
  * Author: orvice
- * last update: 14-9-4
+ * last update: 14-9-5
  *
  */
 
 function bd_dwz($type,$url){
     if($type == 1){
-        $data= "url=".$url;
+        $data=array('url'=>$url);
+        //$data= "url=".$url;
         $short = curl_init();
 
         curl_setopt($short,CURLOPT_URL,"http://dwz.cn/create.php");
@@ -17,15 +18,19 @@ function bd_dwz($type,$url){
         curl_setopt($short,CURLOPT_HEADER,0); //remove head
         curl_setopt($short,CURLOPT_POSTFIELDS,$data); // POST
         //Set Charset
-        curl_setopt($short, CURLOPT_HTTPHEADER, array("application/x-www-form-urlencoded; charset=utf-8",
-            "Content-length: ".strlen($data)
-        ));
+
+
         //Get Json
         $short_json = curl_exec($short);
-        //No errot
-        if (!curl_errno($short_json)){
-            $short_array = jason_decode($short_json,true);
-            return $short_array;
+        //$curl_close($short);
+        $short_array = json_decode($short_json,true);
+        $bk = $short_array['status'];
+        //No error   
+        //if (!curl_errno($short_json)){
+        if (!$bk){
+
+            $rt = $short_array['tinyurl'];
+            return $rt;
         }
         //if error occur,return 0
         else{
