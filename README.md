@@ -3,14 +3,21 @@ url-shorter
 
 url-shorter func base on PHP
 
-## How To Use
+## How To Use/Demo
 
 ###Baidu dwz.cn 
 
 ```
 include_once 'func/baidu_dwz.func.php';
-$url = "http://url.com";
+$url  = "http://url.com";
 $surl = bd_dwz('1',$url);
 echo $surl;
 ```
+###is.gd
 
+```
+include_once 'func/isgd.func.php';
+$url   = "http://url.com";
+$surl  = isgdsrt($url);
+echo $surl;
+```
