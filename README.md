@@ -5,7 +5,7 @@ url-shorter func base on PHP
 
 ## How To Use/Demo
 
-###Baidu dwz.cn 
+###Baidu dwz.cn
 
 ```
 include_once 'func/baidu_dwz.func.php';
@@ -19,5 +19,14 @@ echo $surl;
 include_once 'func/isgd.func.php';
 $url   = "http://url.com";
 $surl  = isgdsrt($url);
+echo $surl;
+```
+
+###is.gd
+
+```
+include_once 'func/bitly.func.php';
+$url   = "http://url.com";
+$surl  = bitlysrt($url);
 echo $surl;
 ```
