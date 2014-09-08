@@ -22,8 +22,9 @@ $surl  = isgdsrt($url);
 echo $surl;
 ```
 
-###is.gd
+###bit.ly
 
+please edit the token in file func/bitly.func.php before using.
 ```
 include_once 'func/bitly.func.php';
 $url   = "http://url.com";
