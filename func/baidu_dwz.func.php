@@ -60,7 +60,4 @@ function bd_dwz($type,$url){
             return 0;
         }
     }
-
-
-
 }

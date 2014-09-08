@@ -5,9 +5,6 @@
  * last update Date: 14-9-7
 */
 
-
-
-
 function isgdSrt($url)
 {
 
