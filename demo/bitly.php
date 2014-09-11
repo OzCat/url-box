@@ -1,11 +1,12 @@
 <?php
 /**
- *  the demo of is.gd srt func
+ *  the demo of is.gd
 */
 
-include_once '../func/bitly.func.php';
+include_once '../class/bitly.class.php';
+$demo = new bitly();
 $url = "http://url.com";
-$bk  = bitlysrt($url);
+$bk  = $demo->srt($url);
 ?>
 
 <p>Long Url: <?php echo $url; ?></p>

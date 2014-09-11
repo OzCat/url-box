@@ -1,11 +1,12 @@
 <?php
 /**
- *  the demo of is.gd srt func
+ *  the demo of is.gd srt
 */
 
-include_once '../func/isgd.func.php';
+include_once '../class/isgd.class.php';
+$demo = new isgd();
 $url = "http://url.com";
-$bk  = isgdsrt($url);
+$bk  = $demo->srt($url);
 ?>
 
 <p>Long Url: <?php echo $url; ?></p>

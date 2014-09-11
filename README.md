@@ -5,29 +5,32 @@ url-shorter func base on PHP
 
 ## How To Use/Demo
 
-###Baidu dwz.cn
+###dwz.cn
 
 ```
-include_once 'func/baidu_dwz.func.php';
-$url  = "http://url.com";
-$surl = bd_dwz('1',$url);
-echo $surl;
+include_once '../class/dwzcn.class.php';
+$demo = new dwzcn();
+$url = "http://url.com";
+$bk = $demo->srt($url);
+echo $bk;
 ```
 ###is.gd
 
 ```
-include_once 'func/isgd.func.php';
-$url   = "http://url.com";
-$surl  = isgdsrt($url);
-echo $surl;
+include_once '../class/isgd.class.php';
+$demo = new isgd();
+$url = "http://url.com";
+$bk  = $demo->srt($url);
+echo $bk;
 ```
 
 ###bit.ly
 
-please edit the token in file func/bitly.func.php before using.
+please edit the token in file class/bitly.class.php before using.
 ```
-include_once 'func/bitly.func.php';
-$url   = "http://url.com";
-$surl  = bitlysrt($url);
-echo $surl;
+include_once '../class/bitly.class.php';
+$demo = new bitly();
+$url = "http://url.com";
+$bk  = $demo->srt($url);
+echo $bk;
 ```
