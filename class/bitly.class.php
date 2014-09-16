@@ -2,18 +2,25 @@
 /**
  * bit.ly URL Shorter
  * Author: orvice
- * last update: 14-9-11
+ * last update: 14-9-16
  *
  */
 
 
 class bitly {
 
+    function  _construct($apikey){
+        $token = $apikey;
+    }
+
     function srt($url){
         $url     = urlencode($url);
         $baseurl = "https://api-ssl.bitly.com/v3/shorten";
         //Edit this token
-        $token   =  "4d4cb354e6d48339a5043f98d08572404cf02628";
+        $owntoken   =  "4d4cb354e6d48339a5043f98d08572404cf02628";
+        if($token==NULL){
+            $token = $owntoken;
+        }
         $furl = $baseurl.'?access_token='.$token.'&longUrl='.$url;
         $short  = curl_init($furl);
         curl_setopt($short,CURLOPT_RETURNTRANSFER,true);
@@ -30,6 +37,10 @@ class bitly {
             return 0;
         }
 
+    }
+
+    function _destruct(){
+        curl_close($short);
     }
 
 }
