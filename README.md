@@ -12,6 +12,8 @@ include_once '../class/dwzcn.class.php';
 $demo = new dwzcn();
 $url = "http://url.com";
 $bk = $demo->srt($url);
+//Restore a url
+$long = $demo->expand($bk);
 echo $bk;
 ```
 ###is.gd

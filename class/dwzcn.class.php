@@ -37,7 +37,7 @@ class dwzcn {
             }
         }
 
-    function restore($url){
+    function expand($url){
             $data=array('tinyurl'=>$url);
             $short = curl_init();
             curl_setopt($short,CURLOPT_URL,"http://dwz.cn/query.php");
