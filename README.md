@@ -40,7 +40,7 @@ $long = $demo->expand($bk);
 echo $bk;
 ```
 
-###bit.ly
+###t.cn
 
 please edit the appkey in file class/tcn.class.php before using.
 You can get your own appkey at [sina](http://open.weibo.com).
