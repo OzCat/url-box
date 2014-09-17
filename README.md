@@ -12,6 +12,8 @@ include_once '../class/dwzcn.class.php';
 $demo = new dwzcn();
 $url = "http://url.com";
 $bk = $demo->srt($url);
+//Restore a url
+$long = $demo->expand($bk);
 echo $bk;
 ```
 ###is.gd
@@ -26,11 +28,14 @@ echo $bk;
 
 ###bit.ly
 
-please edit the token in file class/bitly.class.php before using.
+please edit the defauly token in file class/bitly.class.php before using.
+You can get your own token at [bitly](http://dev.bitly.com/my_apps.html).
 ```
 include_once '../class/bitly.class.php';
-$demo = new bitly();
+$demo = new bitly($key);
 $url = "http://url.com";
 $bk  = $demo->srt($url);
+//Restore a url
+$long = $demo->expand($bk);
 echo $bk;
 ```
