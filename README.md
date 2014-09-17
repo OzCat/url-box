@@ -39,3 +39,17 @@ $bk  = $demo->srt($url);
 $long = $demo->expand($bk);
 echo $bk;
 ```
+
+###bit.ly
+
+please edit the appkey in file class/tcn.class.php before using.
+You can get your own appkey at [sina](http://open.weibo.com).
+```
+include_once '../class/tcn.class.php';
+$demo = new tcn($key);
+$url = "http://url.com";
+$bk  = $demo->srt($url);
+//Restore a url
+$long = $demo->expand($bk);
+echo $bk;
+```
