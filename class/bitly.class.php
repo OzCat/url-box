@@ -36,7 +36,7 @@ class bitly {
             return $bk;
         }
         else{
-            return $this->token;
+            return 0;
         }
      }
 
