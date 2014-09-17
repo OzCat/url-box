@@ -33,5 +33,7 @@ include_once '../class/bitly.class.php';
 $demo = new bitly($key);
 $url = "http://url.com";
 $bk  = $demo->srt($url);
+//Restore a url
+$long = $demo->expand($bk);
 echo $bk;
 ```
