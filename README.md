@@ -33,9 +33,7 @@ $bk  = $demo->srt($url);
 echo $bk;
 ```
 
-###bit.ly
-
-please edit the defauly token in file class/bitly.class.php before using.
+###bit.ly 
 You can get your own token at [bitly](http://dev.bitly.com/my_apps.html).
 ```
 $demo = new Orvice\Urlbox\Bitly($key);
