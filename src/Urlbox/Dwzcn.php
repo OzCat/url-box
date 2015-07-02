@@ -1,13 +1,13 @@
 <?php
 /**
- * Baidu dwz.cn URL Shorter
- * Author: orvice
- * last update: 14-9-11
- *
+ * Baidu dwz.cn class
+ * @license MIT
+ * @package Orvice\Urlbox
  */
 
+namespace Orvice\Urlbox;
 
-class dwzcn {
+class Dwzcn {
 
     function srt($url){
 

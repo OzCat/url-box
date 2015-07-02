@@ -1,12 +1,13 @@
 <?php
 /**
- * bit.ly URL Shorter
- * Author: orvice
- * last update: 14-9-17
- *
+ * Bit.ly Class
+ * @license MIT
+ * @package Orvice\Urlbox
  */
 
-class bitly {
+namespace  Orvice\Urlbox;
+
+class Bitly {
     // ApiKey
     public $token;
     public $apikey;

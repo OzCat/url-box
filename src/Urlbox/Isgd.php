@@ -1,11 +1,13 @@
 <?php
 /**
- * is.gd url shorter function
- * User: orvice
- * last update Date: 14-9-11
+ * is.gd Class
+ * @license MIT
+ * @package Orvice\Urlbox
  */
 
-class isgd{
+namespace Orvice\Urlbox;
+
+class Isgd{
 
     function srt($url)
     {
