@@ -25,7 +25,9 @@ class Isgd{
 
         $bk     = $short_ary['shorturl'];
         // if have any error, $error = 1
-        $error  = $short_ary['errorcode'];
+        if(isset($short_ary['errorcode'])){
+            $error  = $short_ary['errorcode'];
+        } 
         if($error){
             return 0;
         }
