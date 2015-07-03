@@ -24,18 +24,12 @@ class Isgd{
         $short_ary  = json_decode($short_json,true);
 
         $bk     = $short_ary['shorturl'];
-        // if have any error, $error = 1
+        // if have any error, $error = 1 
         if(isset($short_ary['errorcode'])){
-            $error  = $short_ary['errorcode'];
-        } 
-        if($error){
             return 0;
         }
         else{
             return $bk;
         }
-    }
-
-
-}
-?>
+    } 
+} 
