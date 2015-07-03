@@ -9,8 +9,7 @@ namespace Orvice\Urlbox;
 
 class Dwzcn {
 
-    function srt($url){
-
+    function srt($url){ 
             $data=array('url'=>$url);
             $short = curl_init();
             curl_setopt($short,CURLOPT_URL,"http://dwz.cn/create.php");
@@ -62,6 +61,5 @@ class Dwzcn {
             else{
                 return 0;
             }
-        }
-
+        } 
 } 

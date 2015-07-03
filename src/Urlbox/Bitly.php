@@ -59,9 +59,7 @@ class Bitly {
         }
         else{
             return 0;
-        }
-
-
+        } 
     }
 
     function __destruct(){
