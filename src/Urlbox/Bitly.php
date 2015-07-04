@@ -7,7 +7,7 @@
 
 namespace  Orvice\Urlbox;
 
-class Bitly {
+class Bitly extends Base {
     // ApiKey
     public $token;
     public $apikey;
