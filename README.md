@@ -1,15 +1,22 @@
-url-shorter
+Url-box
 ===========
 
-url-shorter func base on PHP
+URL Shorten bundle for PHP
 
 ## How To Use/Demo
 
-###dwz.cn
+### Install
+
+Install with Composer
 
 ```
-include_once '../class/dwzcn.class.php';
-$demo = new dwzcn();
+composer require ozcat/url-box
+```
+
+### dwz.cn
+
+```
+$demo = new Orvice\Urlbox\Dwzcn();
 $url = "http://url.com";
 $bk = $demo->srt($url);
 //Restore a url
@@ -19,20 +26,16 @@ echo $bk;
 ###is.gd
 
 ```
-include_once '../class/isgd.class.php';
-$demo = new isgd();
+$demo = new Orvice\Urlbox\Isgd();
 $url = "http://url.com";
 $bk  = $demo->srt($url);
 echo $bk;
 ```
 
-###bit.ly
-
-please edit the defauly token in file class/bitly.class.php before using.
+###bit.ly 
 You can get your own token at [bitly](http://dev.bitly.com/my_apps.html).
 ```
-include_once '../class/bitly.class.php';
-$demo = new bitly($key);
+$demo = new Orvice\Urlbox\Bitly($key);
 $url = "http://url.com";
 $bk  = $demo->srt($url);
 //Restore a url

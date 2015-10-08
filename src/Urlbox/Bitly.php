@@ -1,12 +1,13 @@
 <?php
 /**
- * bit.ly URL Shorter
- * Author: orvice
- * last update: 14-9-17
- *
+ * Bit.ly Class
+ * @license MIT
+ * @package OzCat\Urlbox
  */
 
-class bitly {
+namespace  OzCat\Urlbox;
+
+class Bitly extends Base {
     // ApiKey
     public $token;
     public $apikey;
@@ -58,9 +59,7 @@ class bitly {
         }
         else{
             return 0;
-        }
-
-
+        } 
     }
 
     function __destruct(){

@@ -1,33 +1,23 @@
 <?php
 /**
- * Baidu dwz.cn URL Shorter
- * Author: orvice
- * last update: 14-9-11
- *
+ * Baidu dwz.cn class
+ * @license MIT
+ * @package OzCat\Urlbox
  */
 
+namespace OzCat\Urlbox;
 
-class dwzcn {
+class Dwzcn extends Base {
 
-    function srt($url){
+    private $baseURL = "http://dwz.cn/create.php";
 
+    function srt($url){ 
             $data=array('url'=>$url);
-            $short = curl_init();
-            curl_setopt($short,CURLOPT_URL,"http://dwz.cn/create.php");
-            curl_setopt($short,CURLOPT_POST,true);
-            curl_setopt($short,CURLOPT_RETURNTRANSFER,true);
-            curl_setopt($short,CURLOPT_HEADER,0); //remove head
-            curl_setopt($short,CURLOPT_POSTFIELDS,$data); // POST
-            //Set Charset
-            //Get Json
-            $short_json = curl_exec($short);
-            curl_close($short);
-            //$curl_close($short);
-            $short_array = json_decode($short_json,true);
+            $json = $this->curlPost($this->baseURL,$data);
+            $short_array = json_decode($json,true);
             $bk = $short_array['status'];
             //No error
             if (!$bk){
-
                 $rt = $short_array['tinyurl'];
                 return $rt;
             }
@@ -62,6 +52,5 @@ class dwzcn {
             else{
                 return 0;
             }
-        }
-
+        } 
 } 

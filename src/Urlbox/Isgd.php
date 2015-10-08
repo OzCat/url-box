@@ -1,11 +1,13 @@
 <?php
 /**
- * is.gd url shorter function
- * User: orvice
- * last update Date: 14-9-11
+ * is.gd Class
+ * @license MIT
+ * @package OzCat\Urlbox
  */
 
-class isgd{
+namespace OzCat\Urlbox;
+
+class Isgd{
 
     function srt($url)
     {
@@ -22,16 +24,12 @@ class isgd{
         $short_ary  = json_decode($short_json,true);
 
         $bk     = $short_ary['shorturl'];
-        // if have any error, $error = 1
-        $error  = $short_ary['errorcode'];
-        if($error){
+        // if have any error, $error = 1 
+        if(isset($short_ary['errorcode'])){
             return 0;
         }
         else{
             return $bk;
         }
-    }
-
-
-}
-?>
+    } 
+} 
