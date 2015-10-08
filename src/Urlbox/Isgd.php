@@ -2,10 +2,10 @@
 /**
  * is.gd Class
  * @license MIT
- * @package Orvice\Urlbox
+ * @package OzCat\Urlbox
  */
 
-namespace Orvice\Urlbox;
+namespace OzCat\Urlbox;
 
 class Isgd{
 

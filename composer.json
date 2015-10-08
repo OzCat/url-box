@@ -1,9 +1,9 @@
 {
-  "name": "orvice/url-box",
+  "name": "OzCat/url-box",
   "description": "php url shorten",
   "keywords": ["url", "php"],
   "type": "library",
-  "homepage": "https://github.com/orvice/url-box",
+  "homepage": "https://github.com/OzCat/url-box",
   "license": "MIT",
   "authors": [
     {
@@ -19,7 +19,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Orvice\\Urlbox\\": "src/Urlbox/"
+      "OzCat\\Urlbox\\": "src/Urlbox/"
     }
   }
 }

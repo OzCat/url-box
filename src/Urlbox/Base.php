@@ -1,6 +1,6 @@
 <?php
 
-namespace Orvice\Urlbox;
+namespace OzCat\Urlbox;
 
 
 class Base {

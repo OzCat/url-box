@@ -2,10 +2,10 @@
 /**
  * Bit.ly Class
  * @license MIT
- * @package Orvice\Urlbox
+ * @package OzCat\Urlbox
  */
 
-namespace  Orvice\Urlbox;
+namespace  OzCat\Urlbox;
 
 class Bitly extends Base {
     // ApiKey

@@ -2,10 +2,10 @@
 /**
  * Baidu dwz.cn class
  * @license MIT
- * @package Orvice\Urlbox
+ * @package OzCat\Urlbox
  */
 
-namespace Orvice\Urlbox;
+namespace OzCat\Urlbox;
 
 class Dwzcn extends Base {
 
