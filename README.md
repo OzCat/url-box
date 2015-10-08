@@ -16,7 +16,7 @@ composer require ozcat/url-box
 ### dwz.cn
 
 ```
-$demo = new Orvice\Urlbox\Dwzcn();
+$demo = new OzCat\Urlbox\Dwzcn();
 $url = "http://url.com";
 $bk = $demo->srt($url);
 //Restore a url
@@ -26,7 +26,7 @@ echo $bk;
 ###is.gd
 
 ```
-$demo = new Orvice\Urlbox\Isgd();
+$demo = new OzCat\Urlbox\Isgd();
 $url = "http://url.com";
 $bk  = $demo->srt($url);
 echo $bk;
@@ -35,7 +35,7 @@ echo $bk;
 ###bit.ly 
 You can get your own token at [bitly](http://dev.bitly.com/my_apps.html).
 ```
-$demo = new Orvice\Urlbox\Bitly($key);
+$demo = new OzCat\Urlbox\Bitly($key);
 $url = "http://url.com";
 $bk  = $demo->srt($url);
 //Restore a url
