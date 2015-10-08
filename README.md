@@ -10,8 +10,7 @@ URL Shorten bundle for PHP
 Install with Composer
 
 ```
-composer require orvice/url-box
-
+composer require ozcat/url-box
 ```
 
 ### dwz.cn
